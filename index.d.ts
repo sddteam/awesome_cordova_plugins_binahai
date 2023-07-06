@@ -27,7 +27,7 @@ export declare class BinahAiOriginal extends AwesomeCordovaNativePlugin {
      * @param arg2 {number} Another param to configure something
      * @return {Promise<any>} Returns a promise that resolves when something happens
      */
-    functionName(arg1: string, arg2: number): Promise<any>;
+    coolMethod(arg1: string): Promise<any>;
 }
 
 export declare const BinahAi: BinahAiOriginal;

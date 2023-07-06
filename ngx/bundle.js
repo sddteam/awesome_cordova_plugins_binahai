@@ -28,7 +28,7 @@ var BinahAi = /** @class */ (function (_super) {
     function BinahAi() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    BinahAi.prototype.functionName = function (arg1, arg2) { return core.cordova(this, "functionName", {}, arguments); };
+    BinahAi.prototype.coolMethod = function (arg1) { return core.cordova(this, "coolMethod", {}, arguments); };
     BinahAi.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     BinahAi.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi });
     BinahAi.pluginName = "BinahAi";
@@ -43,6 +43,6 @@ var BinahAi = /** @class */ (function (_super) {
 }(core.AwesomeCordovaNativePlugin));
 i0__namespace.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, decorators: [{
             type: i0.Injectable
-        }], propDecorators: { functionName: [] } });
+        }], propDecorators: { coolMethod: [] } });
 
 exports.BinahAi = BinahAi;
