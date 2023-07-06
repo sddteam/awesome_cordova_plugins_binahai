@@ -32,12 +32,12 @@ var BinahAi = /** @class */ (function (_super) {
     BinahAi.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     BinahAi.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi });
     BinahAi.pluginName = "BinahAi";
-    BinahAi.plugin = "";
-    BinahAi.pluginRef = "";
-    BinahAi.repo = "";
+    BinahAi.plugin = "https://github.com/marhano/cordova_plugin_binahai.git";
+    BinahAi.pluginRef = "BinahAi";
+    BinahAi.repo = "https://github.com/marhano/cordova_plugin_binahai.git";
     BinahAi.install = "";
     BinahAi.installVariables = [];
-    BinahAi.platforms = [];
+    BinahAi.platforms = ["Android"];
     BinahAi = tslib.__decorate([], BinahAi);
     return BinahAi;
 }(core.AwesomeCordovaNativePlugin));

@@ -1,0 +1,28 @@
+{
+  "name": "@awesome-cordova-plugins/binah-ai",
+  "version": "1.0.0",
+  "description": "binahai native ionic plugin",
+  "main": "bundle.js",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marhano/awesome_cordova_plugins_binahai.git"
+  },
+  "keywords": [
+    "binah",
+    "ionic",
+    "cordova",
+    "plugin",
+    "awesome"
+  ],
+  "author": "marhano",
+  "license": "ISC",
+  "types": "./index.d.ts",
+  "bugs": {
+    "url": "https://github.com/marhano/awesome_cordova_plugins_binahai/issues"
+  },
+  "homepage": "https://github.com/marhano/awesome_cordova_plugins_binahai#readme"
+}
