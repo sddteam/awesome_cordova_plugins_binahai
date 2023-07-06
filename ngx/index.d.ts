@@ -21,11 +21,6 @@ import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
  * ```
  */
 export declare class BinahAi extends AwesomeCordovaNativePlugin {
-    /**
-     * This function does something
-     * @param arg1 {string} Some param to configure something
-     * @param arg2 {number} Another param to configure something
-     * @return {Promise<any>} Returns a promise that resolves when something happens
-     */
-    coolMethod(arg1: string): Promise<any>;
+    startCamera(): Promise<any>;
+    startScan(): Promise<any>;
 }
