@@ -51,7 +51,7 @@ export interface LiveMeasurements {
 export declare class BinahAiOriginal extends AwesomeCordovaNativePlugin {
     startCamera(): Promise<any>;
     startScan(): Observable<LiveMeasurements>;
-    stopScan(): Observable<FinalResults>;
+    stopScan(): Promise<FinalResults>;
 }
 
 export declare const BinahAi: BinahAiOriginal;
