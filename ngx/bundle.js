@@ -3,6 +3,7 @@
 var tslib = require('tslib');
 var i0 = require('@angular/core');
 var core = require('@awesome-cordova-plugins/core');
+require('rxjs');
 
 function _interopNamespaceDefault(e) {
     var n = Object.create(null);
@@ -30,6 +31,7 @@ var BinahAi = /** @class */ (function (_super) {
     }
     BinahAi.prototype.startCamera = function () { return core.cordova(this, "startCamera", {}, arguments); };
     BinahAi.prototype.startScan = function () { return core.cordova(this, "startScan", {}, arguments); };
+    BinahAi.prototype.stopScan = function () { return core.cordova(this, "stopScan", {}, arguments); };
     BinahAi.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     BinahAi.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi });
     BinahAi.pluginName = "BinahAi";
@@ -44,6 +46,6 @@ var BinahAi = /** @class */ (function (_super) {
 }(core.AwesomeCordovaNativePlugin));
 i0__namespace.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, decorators: [{
             type: i0.Injectable
-        }], propDecorators: { startCamera: [], startScan: [] } });
+        }], propDecorators: { startCamera: [], startScan: [], stopScan: [] } });
 
 exports.BinahAi = BinahAi;

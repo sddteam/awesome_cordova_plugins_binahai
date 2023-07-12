@@ -1,4 +1,32 @@
 import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
+import { Observable } from 'rxjs';
+export interface FinalResults {
+    lfhf?: number;
+    bloodPressure?: number;
+    meanRri?: number;
+    oxygenSaturation?: number;
+    pnsIndex?: number;
+    pnsZone?: number;
+    prq?: number;
+    pulseRate?: number;
+    rmssd?: number;
+    rri?: number;
+    respirationRate?: number;
+    sd1?: number;
+    sd2?: number;
+    sdnn?: number;
+    snsIndex?: number;
+    snsZone?: number;
+    stressLevel?: number;
+    stressIndex?: number;
+    wellnessIndex?: number;
+    wellnessLevel?: number;
+}
+export interface LiveMeasurements {
+    pulseRate?: number;
+    respirationRate?: number;
+    oxygenSaturation?: number;
+}
 /**
  * @name Binah Ai
  * @description
@@ -22,7 +50,8 @@ import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
  */
 export declare class BinahAiOriginal extends AwesomeCordovaNativePlugin {
     startCamera(): Promise<any>;
-    startScan(): Promise<any>;
+    startScan(): Observable<LiveMeasurements>;
+    stopScan(): Observable<FinalResults>;
 }
 
 export declare const BinahAi: BinahAiOriginal;
