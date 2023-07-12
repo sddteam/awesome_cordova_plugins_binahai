@@ -30,7 +30,7 @@ var BinahAi = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     BinahAi.prototype.startCamera = function () { return core.cordova(this, "startCamera", {}, arguments); };
-    BinahAi.prototype.startScan = function () { return core.cordova(this, "startScan", {}, arguments); };
+    BinahAi.prototype.startScan = function () { return core.cordova(this, "startScan", { "observable": true }, arguments); };
     BinahAi.prototype.stopScan = function () { return core.cordova(this, "stopScan", {}, arguments); };
     BinahAi.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     BinahAi.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi });
