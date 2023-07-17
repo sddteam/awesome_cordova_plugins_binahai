@@ -27,6 +27,12 @@ export interface LiveMeasurements {
     respirationRate?: number;
     oxygenSaturation?: number;
 }
+export interface StartCameraOption {
+    licenseKey?: string;
+    sex?: string;
+    age?: number;
+    weight?: number;
+}
 /**
  * @name Binah Ai
  * @description
@@ -49,7 +55,7 @@ export interface LiveMeasurements {
  * ```
  */
 export declare class BinahAi extends AwesomeCordovaNativePlugin {
-    startCamera(): Promise<any>;
+    startCamera(option: StartCameraOption): Promise<any>;
     startScan(): Observable<any>;
     stopScan(): Promise<any>;
     imageValidation(): Observable<any>;
