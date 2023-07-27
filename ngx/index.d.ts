@@ -60,4 +60,5 @@ export declare class BinahAi extends AwesomeCordovaNativePlugin {
     startScan(): Observable<any>;
     stopScan(): Promise<any>;
     imageValidation(): Observable<any>;
+    getSessionState(): Promise<any>;
 }
