@@ -30,6 +30,7 @@ var BinahAi = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     BinahAi.prototype.startCamera = function (option) { return core.cordova(this, "startCamera", {}, arguments); };
+    BinahAi.prototype.stopCamera = function () { return core.cordova(this, "stopCamera", {}, arguments); };
     BinahAi.prototype.startScan = function () { return core.cordova(this, "startScan", { "observable": true }, arguments); };
     BinahAi.prototype.stopScan = function () { return core.cordova(this, "stopScan", {}, arguments); };
     BinahAi.prototype.imageValidation = function () { return core.cordova(this, "imageValidation", { "observable": true }, arguments); };
@@ -47,6 +48,6 @@ var BinahAi = /** @class */ (function (_super) {
 }(core.AwesomeCordovaNativePlugin));
 i0__namespace.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, decorators: [{
             type: i0.Injectable
-        }], propDecorators: { startCamera: [], startScan: [], stopScan: [], imageValidation: [] } });
+        }], propDecorators: { startCamera: [], stopCamera: [], startScan: [], stopScan: [], imageValidation: [] } });
 
 exports.BinahAi = BinahAi;
