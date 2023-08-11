@@ -29,6 +29,7 @@ export interface LiveMeasurements {
 }
 export interface StartCameraOption {
     licenseKey?: string;
+    duration?: number;
     sex?: string;
     age?: number;
     weight?: number;
@@ -55,12 +56,12 @@ export interface StartCameraOption {
  * ```
  */
 export declare class BinahAiOriginal extends AwesomeCordovaNativePlugin {
-    startCamera(option: StartCameraOption): Promise<any>;
+    startCamera(option: StartCameraOption): Observable<any>;
     stopCamera(): Promise<any>;
     startScan(): Observable<any>;
     stopScan(): Promise<any>;
     imageValidation(): Observable<any>;
-    getSessionState(): Promise<any>;
+    getSessionState(): Observable<any>;
 }
 
 export declare const BinahAi: BinahAiOriginal;

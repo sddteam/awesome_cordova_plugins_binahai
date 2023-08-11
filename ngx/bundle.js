@@ -29,12 +29,12 @@ var BinahAi = /** @class */ (function (_super) {
     function BinahAi() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    BinahAi.prototype.startCamera = function (option) { return core.cordova(this, "startCamera", {}, arguments); };
+    BinahAi.prototype.startCamera = function (option) { return core.cordova(this, "startCamera", { "observable": true }, arguments); };
     BinahAi.prototype.stopCamera = function () { return core.cordova(this, "stopCamera", {}, arguments); };
     BinahAi.prototype.startScan = function () { return core.cordova(this, "startScan", { "observable": true }, arguments); };
     BinahAi.prototype.stopScan = function () { return core.cordova(this, "stopScan", {}, arguments); };
     BinahAi.prototype.imageValidation = function () { return core.cordova(this, "imageValidation", { "observable": true }, arguments); };
-    BinahAi.prototype.getSessionState = function () { return core.cordova(this, "getSessionState", {}, arguments); };
+    BinahAi.prototype.getSessionState = function () { return core.cordova(this, "getSessionState", { "observable": true }, arguments); };
     BinahAi.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     BinahAi.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi });
     BinahAi.pluginName = "BinahAi";
@@ -43,7 +43,7 @@ var BinahAi = /** @class */ (function (_super) {
     BinahAi.repo = "https://github.com/marhano/cordova_plugin_binahai.git";
     BinahAi.install = "";
     BinahAi.installVariables = [];
-    BinahAi.platforms = ["Android"];
+    BinahAi.platforms = ["Android", "iOS"];
     BinahAi = tslib.__decorate([], BinahAi);
     return BinahAi;
 }(core.AwesomeCordovaNativePlugin));
