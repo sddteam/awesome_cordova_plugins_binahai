@@ -62,6 +62,7 @@ export declare class BinahAiOriginal extends AwesomeCordovaNativePlugin {
     stopScan(): Promise<any>;
     imageValidation(): Observable<any>;
     getSessionState(): Observable<any>;
+    userFaceValidation(): Observable<any>;
 }
 
 export declare const BinahAi: BinahAiOriginal;
