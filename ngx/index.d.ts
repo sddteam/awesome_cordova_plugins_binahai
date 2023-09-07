@@ -1,26 +1,30 @@
 import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
 import { Observable } from 'rxjs';
 export interface FinalResults {
-    lfhf?: string;
-    bloodPressure?: string;
-    meanRri?: string;
-    oxygenSaturation?: string;
-    pnsIndex?: string;
-    pnsZone?: string;
-    prq?: string;
-    pulseRate?: string;
-    rmssd?: string;
-    rri?: string;
-    respirationRate?: string;
-    sd1?: string;
-    sd2?: string;
-    sdnn?: string;
-    snsIndex?: string;
-    snsZone?: string;
-    stressLevel?: string;
-    stressIndex?: string;
-    wellnessIndex?: string;
-    wellnessLevel?: string;
+    lfhf?: sign;
+    bloodPressure?: sign;
+    meanRri?: sign;
+    oxygenSaturation?: sign;
+    pnsIndex?: sign;
+    pnsZone?: sign;
+    prq?: sign;
+    pulseRate?: sign;
+    rmssd?: sign;
+    rri?: sign;
+    respirationRate?: sign;
+    sd1?: sign;
+    sd2?: sign;
+    sdnn?: sign;
+    snsIndex?: sign;
+    snsZone?: sign;
+    stressLevel?: sign;
+    stressIndex?: sign;
+    wellnessIndex?: sign;
+    wellnessLevel?: sign;
+}
+export interface sign {
+    name: string;
+    value: string;
 }
 export interface LiveMeasurements {
     pulseRate?: number;
@@ -28,8 +32,8 @@ export interface LiveMeasurements {
     oxygenSaturation?: number;
 }
 export interface StartCameraOption {
-    licenseKey?: string;
-    duration?: number;
+    licenseKey: string;
+    duration: number;
     sex?: string;
     age?: number;
     weight?: number;
