@@ -21,10 +21,14 @@ export interface FinalResults {
     stressIndex?: sign;
     wellnessIndex?: sign;
     wellnessLevel?: sign;
+    hemoglobin?: sign;
+    hemoglobinA1C?: sign;
 }
 export interface sign {
     name: string;
-    value: string;
+    value: any;
+    level?: string;
+    description?: string;
 }
 export interface LiveMeasurements {
     pulseRate?: number;
