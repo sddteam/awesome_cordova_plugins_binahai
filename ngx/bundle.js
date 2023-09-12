@@ -36,6 +36,10 @@ var BinahAi = /** @class */ (function (_super) {
     BinahAi.prototype.imageValidation = function () { return core.cordova(this, "imageValidation", { "observable": true }, arguments); };
     BinahAi.prototype.getSessionState = function () { return core.cordova(this, "getSessionState", { "observable": true }, arguments); };
     BinahAi.prototype.userFaceValidation = function () { return core.cordova(this, "userFaceValidation", { "observable": true }, arguments); };
+    BinahAi.prototype.getAllHistory = function () { return core.cordova(this, "getAllHistory", {}, arguments); };
+    BinahAi.prototype.getHistoryById = function () { return core.cordova(this, "getHistoryById", {}, arguments); };
+    BinahAi.prototype.getHistoryByDateTime = function () { return core.cordova(this, "getHistoryByDateTime", {}, arguments); };
+    BinahAi.prototype.deleteHistoryById = function () { return core.cordova(this, "deleteHistoryById", {}, arguments); };
     BinahAi.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     BinahAi.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi });
     BinahAi.pluginName = "BinahAi";
@@ -50,6 +54,6 @@ var BinahAi = /** @class */ (function (_super) {
 }(core.AwesomeCordovaNativePlugin));
 i0__namespace.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, decorators: [{
             type: i0.Injectable
-        }], propDecorators: { startCamera: [], stopCamera: [], startScan: [], stopScan: [], imageValidation: [], getSessionState: [], userFaceValidation: [] } });
+        }], propDecorators: { startCamera: [], stopCamera: [], startScan: [], stopScan: [], imageValidation: [], getSessionState: [], userFaceValidation: [], getAllHistory: [], getHistoryById: [], getHistoryByDateTime: [], deleteHistoryById: [] } });
 
 exports.BinahAi = BinahAi;
