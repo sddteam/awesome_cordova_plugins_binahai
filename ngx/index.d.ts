@@ -28,7 +28,7 @@ export interface sign {
     name: string;
     value: any;
     level?: string;
-    description?: string;
+    uname?: string;
 }
 export interface LiveMeasurements {
     pulseRate?: number;
@@ -75,4 +75,5 @@ export declare class BinahAi extends AwesomeCordovaNativePlugin {
     getHistoryById(): Promise<any>;
     getHistoryByDateTime(): Promise<any>;
     deleteHistoryById(): Promise<any>;
+    getVitalDescription(): Promise<any>;
 }
