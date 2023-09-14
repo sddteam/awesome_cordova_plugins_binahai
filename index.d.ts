@@ -72,9 +72,9 @@ export declare class BinahAiOriginal extends AwesomeCordovaNativePlugin {
     getSessionState(): Observable<any>;
     userFaceValidation(): Observable<any>;
     getAllHistory(): Promise<any>;
-    getHistoryById(): Promise<any>;
-    getHistoryByDateTime(): Promise<any>;
-    deleteHistoryById(): Promise<any>;
+    getHistoryById(measurementId: string): Promise<any>;
+    getHistoryByDateTime(dateTime: string): Promise<any>;
+    deleteHistoryById(userId: string): Promise<any>;
     getVitalDescription(): Promise<any>;
 }
 
