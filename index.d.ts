@@ -22,7 +22,7 @@ export interface FinalResults {
     wellnessIndex?: sign;
     wellnessLevel?: sign;
     hemoglobin?: sign;
-    hemoglobinA1C?: sign;
+    hemoglobinA1c?: sign;
 }
 export interface sign {
     name: string;
