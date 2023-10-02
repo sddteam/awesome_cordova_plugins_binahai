@@ -76,6 +76,7 @@ export declare class BinahAiOriginal extends AwesomeCordovaNativePlugin {
     getHistoryByDateTime(dateTime: string): Promise<any>;
     deleteHistoryById(userId: string): Promise<any>;
     getVitalDescription(): Promise<any>;
+    deleteMeasurement(measurementId: string): Promise<any>;
 }
 
 export declare const BinahAi: BinahAiOriginal;
