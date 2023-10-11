@@ -36,12 +36,11 @@ var BinahAi = /** @class */ (function (_super) {
     BinahAi.prototype.imageValidation = function () { return core.cordova(this, "imageValidation", { "observable": true }, arguments); };
     BinahAi.prototype.getSessionState = function () { return core.cordova(this, "getSessionState", { "observable": true }, arguments); };
     BinahAi.prototype.userFaceValidation = function () { return core.cordova(this, "userFaceValidation", { "observable": true }, arguments); };
-    BinahAi.prototype.getAllHistory = function () { return core.cordova(this, "getAllHistory", {}, arguments); };
-    BinahAi.prototype.getHistoryById = function (measurementId) { return core.cordova(this, "getHistoryById", {}, arguments); };
-    BinahAi.prototype.getHistoryByDateTime = function (dateTime) { return core.cordova(this, "getHistoryByDateTime", {}, arguments); };
-    BinahAi.prototype.deleteHistoryById = function (userId) { return core.cordova(this, "deleteHistoryById", {}, arguments); };
-    BinahAi.prototype.getVitalDescription = function () { return core.cordova(this, "getVitalDescription", {}, arguments); };
-    BinahAi.prototype.deleteMeasurement = function (measurementId) { return core.cordova(this, "deleteMeasurement", {}, arguments); };
+    BinahAi.prototype.getAllMeasurement = function () { return core.cordova(this, "getAllMeasurement", {}, arguments); };
+    BinahAi.prototype.getMeasurementById = function (measurementId) { return core.cordova(this, "getMeasurementById", {}, arguments); };
+    BinahAi.prototype.getMeasurementByDateTime = function (dateTime) { return core.cordova(this, "getMeasurementByDateTime", {}, arguments); };
+    BinahAi.prototype.deleteMeasurementById = function (measurementId) { return core.cordova(this, "deleteMeasurementById", {}, arguments); };
+    BinahAi.prototype.shareResult = function (result) { return core.cordova(this, "shareResult", {}, arguments); };
     BinahAi.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     BinahAi.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi });
     BinahAi.pluginName = "BinahAi";
@@ -56,6 +55,6 @@ var BinahAi = /** @class */ (function (_super) {
 }(core.AwesomeCordovaNativePlugin));
 i0__namespace.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: BinahAi, decorators: [{
             type: i0.Injectable
-        }], propDecorators: { startCamera: [], stopCamera: [], startScan: [], stopScan: [], imageValidation: [], getSessionState: [], userFaceValidation: [], getAllHistory: [], getHistoryById: [], getHistoryByDateTime: [], deleteHistoryById: [], getVitalDescription: [], deleteMeasurement: [] } });
+        }], propDecorators: { startCamera: [], stopCamera: [], startScan: [], stopScan: [], imageValidation: [], getSessionState: [], userFaceValidation: [], getAllMeasurement: [], getMeasurementById: [], getMeasurementByDateTime: [], deleteMeasurementById: [], shareResult: [] } });
 
 exports.BinahAi = BinahAi;
