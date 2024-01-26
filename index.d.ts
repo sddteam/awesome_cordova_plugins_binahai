@@ -64,7 +64,7 @@ export interface StartCameraOption {
  * ```
  */
 export declare class BinahAiOriginal extends AwesomeCordovaNativePlugin {
-    startCamera(option: StartCameraOption): Observable<any>;
+    startCamera(option: StartCameraOption): Promise<any>;
     stopCamera(): Promise<any>;
     startScan(): Observable<any>;
     stopScan(): Promise<any>;

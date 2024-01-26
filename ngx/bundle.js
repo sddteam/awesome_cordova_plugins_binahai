@@ -29,7 +29,7 @@ var BinahAi = /** @class */ (function (_super) {
     function BinahAi() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    BinahAi.prototype.startCamera = function (option) { return core.cordova(this, "startCamera", { "observable": true }, arguments); };
+    BinahAi.prototype.startCamera = function (option) { return core.cordova(this, "startCamera", {}, arguments); };
     BinahAi.prototype.stopCamera = function () { return core.cordova(this, "stopCamera", {}, arguments); };
     BinahAi.prototype.startScan = function () { return core.cordova(this, "startScan", { "observable": true }, arguments); };
     BinahAi.prototype.stopScan = function () { return core.cordova(this, "stopScan", {}, arguments); };
