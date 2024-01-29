@@ -71,9 +71,10 @@ export declare class BinahAi extends AwesomeCordovaNativePlugin {
     imageValidation(): Observable<any>;
     getSessionState(): Observable<any>;
     userFaceValidation(): Observable<any>;
-    getAllMeasurement(): Promise<any>;
-    getMeasurementById(measurementId: string): Promise<any>;
-    getMeasurementByDateTime(dateTime: string): Promise<any>;
-    deleteMeasurementById(measurementId: string): Promise<any>;
+    getAllMeasurement(userId: string): Promise<any>;
+    getMeasurementById(userId: string, measurementId: string): Promise<any>;
+    getMeasurementByDateTime(userId: string, dateTime: string): Promise<any>;
+    deleteMeasurementById(userId: string, measurementId: string): Promise<any>;
     shareResult(result: string): Promise<any>;
+    extractHealthData(userId: string): Promise<any>;
 }
