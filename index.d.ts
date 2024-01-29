@@ -38,6 +38,7 @@ export interface LiveMeasurements {
 export interface StartCameraOption {
     licenseKey: string;
     duration: number;
+    userId: string;
     sex?: string;
     age?: number;
     weight?: number;
